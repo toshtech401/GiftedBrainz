@@ -6,6 +6,7 @@
 .toggle{
     display: flex;
     align-items: center;
+    justify-content: space-around;
 }
 .between img{
     height: 30px;
@@ -36,6 +37,11 @@ main{
     color: white;
 
 }
+.ween:hover{
+    background-color:#5852FE;
+    color:white;
+    padding: 10px 5px;
+}
 .ween{
     display: flex;
     align-items: center;
@@ -51,13 +57,13 @@ main{
     color: white;
 }
 input{
-    width: 100%;
+    width: 50%;
     padding: 10px 5px;
     border-radius: 10px;
     outline: none;
 }
 .inp img{
-    height: 20px;
+    height: 40px;
 }
 .vec{
     display: flex;
@@ -67,11 +73,30 @@ input{
     display: flex;
     align-items: center;
     width: 100%;
+    justify-content: space-between;
     gap: 50px;
 }
 .left{
-    width: 100%;
+    width: 80%;
+    padding: 30px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 }
+
+
+aside.aside-hidden {
+    width: 5%;
+}
+
+.toggle img:last-child {
+    display: block;
+}
+
+.toggle img.hidden {
+    display: none;
+}
+
 .dash img{
     height: 30px;
 }
@@ -80,5 +105,90 @@ aside{
     flex-direction: column;
     gap: 30px;
     width: 20%;
+    border-right: 0.2px solid black;
+    transition: ease 2s;
     /* padding: 5px 10px; */
+}
+.aside-hidden .between p,
+.aside-hidden .between1 p {
+    max-height: 0;
+    opacity: 0;
+    transition: 2s ease;
+}
+
+.between p,
+.between1 p {
+    max-height: 100px; /* Adjust the value as needed */
+    opacity: 1;
+    transition:0.3s ease;
+}
+
+.aside-hidden .dash p,
+.aside-hidden .between p,
+.aside-hidden .between1 p {
+    display: none;
+}
+.aside-hidden .toggle img:last-child {
+    transform: rotate(180deg);
+}
+.col{
+    display: flex;
+    gap: 30px;
+}   
+.blue{
+    background-color: #5852FE;
+    color: white;
+    padding: 30px 60px;
+    border-radius: 20px;
+    text-align: center;
+}   
+.green{
+    background-color: #34A853;
+    color: white;
+    padding: 30px 60px;
+    border-radius: 20px;
+    text-align: center;
+}   
+.orange{
+    background-color: #F5761A;
+    color: white;
+    padding: 30px 60px;
+    border-radius: 20px;
+    text-align: center;
+}   
+span{
+    font-size: 40px;
+}
+.table{
+    display: flex;
+}
+.table .sn{
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.sn p, .task p, .answered p, .point p{
+    border-bottom: 1px solid black;
+    font-weight: 600;
+}
+.sn h4, .task h4, .answered h4, .point h4{
+    border-bottom: 1px solid black;
+}
+.task{
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.answered{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.point{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
 }

@@ -11,8 +11,8 @@
     <main>
         <aside>
             <div class="toggle">
-                <img style="height: 110px;" src="../images/logo.png" alt="">
-                <img style="height: 40px;" src="../images/arrow_right_alt_FILL0_wght400_GRAD0_opsz48.svg" alt="">
+                <img style="height: 110px;" src="../images/logo.png" alt="" id="hide">
+                <img style="height: 40px;" src="../images/arrow_right_alt_FILL0_wght400_GRAD0_opsz48.svg" alt="" id="toggleButton">
             </div>
             <div class="dash">
                 <img src="../Emages/Dashboard.png" alt="">
@@ -21,45 +21,45 @@
             <div class="between">
                 <div class="ween">
                     <img src="../Emages/Group 31.png" alt="">
-                    <p>Quiz Competition</p>
+                    <p class="folded">Quiz Competition</p>
                 </div>
                 <div class="ween">
                     <img src="../Emages/Group 33.png" alt="">
-                    <p>Quiz Leaderboard</p>
+                    <p class="folded">Quiz Leaderboard</p>
                 </div>
                 <div class="ween">
                     <img src="../Emages/RGB Color Wheel.png" alt="">
-                    <p>Spin To Win</p>
+                    <p class="folded">Spin To Win</p>
                 </div>
                 <div class="ween">
                     <img src="../Emages/Graduation Cap.png" alt="">
-                    <p>Courses</p>
+                    <p class="folded">Courses</p>
                 </div>
                 <div class="ween">
                     <img src="../Emages/Bank Cards.png" alt="">
-                    <p>Payments</p>
+                    <p class="folded">Payments</p>
                 </div>
                 <div class="ween">
                     <img src="../Emages/Collaboration Female Male.png" alt="">
-                    <p>Referral History</p>
+                    <p class="folded">Referral History</p>
                 </div>
                 <div class="ween">
                     <img src="../Emages/Order History.png" alt="">
-                    <p>Earnings History</p>
+                    <p class="folded">Earnings History</p>
                 </div>
             </div>
             <div class="between1">
                 <div class="ween">
                     <img src="../images/Group 34.png" alt="">
-                    <p>Setting</p>
+                    <p class="folded">Setting</p>
                 </div>
                 <div class="ween">
                     <img src="../Emages/Group 35.png" alt="">
-                    <p>Get Help</p>
+                    <p class="folded">Get Help</p>
                 </div>
                 <div class="ween">
                     <img src="../Emages/Group 36.png" alt="">
-                    <p>Log Out</p>
+                    <p class="folded">Log Out</p>
                 </div>
             </div>
         </aside>
@@ -69,11 +69,108 @@
                 <input type="search">
                 <div class="vec">
                     <img src="../Emages/Vector (5).png" alt="">
-                     <img src="../Emages/Ellipse 17 (1).png" alt="">
+                    <img src="../Emages/Ellipse 17 (1).png" alt="">
                 </div>
             </div>
-            <div></div>
+            <div>
+                <h1>Welcome, Jays</h1>
+            </div>
+            <div class="col">
+                <div class="blue">
+                    <p>Total Earnings</p>
+                    <h1>#203,978</h1>
+                </div>
+                <div class="green">
+                    <p>Total Points</p>
+
+                    <p><span>2000</span> SQP</p>
+                </div>
+                <div class="orange">
+                    <p>Referrals Earnings</p>
+                    <h1>#12,000</h1>
+                </div>
+            </div>
+            <div class="table-container">
+                <h3>Earning history</h3>
+                <div class="table">
+                    <div class="sn">
+                        <h4>S/N</h4>
+                        <p>1</p>
+                        <p>2</p>
+                        <p>3</p>
+                        <p>4</p>
+                        <p>5</p>
+                        <p>6</p>
+                    </div>
+                    <div class="task">
+                        <h4>Task</h4>
+                        <p>What is UI/UX Design</p>
+                        <p>Principle of Design</p>
+                        <p>Interaction Design</p>
+                        <p>User Research</p>
+                        <p>Prototype</p>
+                        <p>Data Analysis</p>
+                    </div>
+                    <div class="answered">
+                        <h4>Total Answered</h4>
+                        <p>15</p>
+                        <p>15</p>
+                        <p>15</p>
+                        <p>15</p>
+                        <p>15</p>
+                        <p>15</p>
+                    </div>
+                    <div class="point">
+                        <h4>Points</h4>
+                        <p>20pts</p>
+                        <p>10pts</p>
+                        <p>20pts</p>
+                        <p>50pts</p>
+                        <p>40pts</p>
+                        <p>50pts</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
+
+
+
+    <script>
+    //     const toggleButton = document.getElementById("toggleButton");
+    //     const aside = document.querySelector("aside");
+    //     const betweenElements = document.querySelectorAll(".between img");
+    //     const between1Elements = document.querySelectorAll(".between1 img");
+
+    //     toggleButton.addEventListener("click", function() {
+    //     aside.classList.toggle("aside-hidden");
+    //     betweenElements.forEach(element => element.classList.toggle("hidden"));
+    //     between1Elements.forEach(element => element.classList.toggle("hidden"));
+    // });
+
+//     const toggleButton = document.getElementById("toggleButton");
+//     const aside = document.querySelector("aside");
+//     const toggleLogo = document.getElementById("hide");
+
+//     toggleButton.addEventListener("click", function() {
+//     aside.classList.toggle("aside-hidden");
+//     toggleLogo.classList.toggle("hidden");
+// });
+const toggleButton = document.getElementById("toggleButton");
+const aside = document.querySelector("aside");
+const betweenElements = document.querySelectorAll(".between p");
+const between1Elements = document.querySelectorAll(".between1 p");
+const toggleLogo = document.getElementById("hide");
+
+toggleButton.addEventListener("click", function() {
+    toggleLogo.classList.toggle("hidden");
+    aside.classList.toggle("aside-hidden");
+    betweenElements.forEach(element => element.classList.toggle("folded"));
+    between1Elements.forEach(element => element.classList.toggle("folded"));
+});
+
+
+
+    </script>
 </body>
 </html>
