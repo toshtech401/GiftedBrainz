@@ -77,7 +77,7 @@ aside{
     gap: 30px;
     width: 20%;
     border-right: 0.2px solid black;
-    transition: ease 2s;
+    transition: 0.1s ease-in-out;
     height: 100vh;
     /* padding: 5px 10px; */
 }
@@ -102,4 +102,47 @@ aside{
 }
 .aside-hidden .toggle img:last-child {
     transform: rotate(180deg);
+}
+.other{
+    width: 95%;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.play{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.tag{
+    display: flex;
+    justify-content: space-between;
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-size: larger;
+}
+.text{
+    display: flex;
+    justify-content: space-between;
+}
+.game{
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+.btnt{
+    background-color: transparent;
+    padding: 10px 15px;
+    border: 1px solid #5852FE;
+    border-radius: 10px;
+}
+.btnb{
+    background-color: #5852FE;
+    padding: 10px 15px;
+    border: none;
+    color: white;
+    border-radius: 10px;
 }

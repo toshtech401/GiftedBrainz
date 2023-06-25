@@ -1,0 +1,105 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.toggle{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.between img{
+    height: 30px;
+}
+.between1 img{
+    height: 30px;
+}
+.between{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px 10px;
+    font-size: 20px;
+    /* color: white; */
+
+}
+main{
+    width: 100%;
+    display: flex;
+}
+.between1{
+    background-color: #5852FE;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px;
+    font-size: 20px;
+    color: white;
+
+}
+.ween:hover{
+    background-color:#5852FE;
+    color:white;
+    padding: 10px 5px;
+}
+.ween{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.dash{
+    background-color: #5852FE;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+    font-size: 20px;
+    color: white;
+}
+aside.aside-hidden {
+    width: 5%;
+}
+
+.toggle img:last-child {
+    display: block;
+}
+
+.toggle img.hidden {
+    display: none;
+}
+
+.dash img{
+    height: 30px;
+}
+aside{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 20%;
+    border-right: 0.2px solid black;
+    transition: 0.1s ease-in-out;
+    height: 100vh;
+    /* padding: 5px 10px; */
+}
+.aside-hidden .between p,
+.aside-hidden .between1 p {
+    max-height: 0;
+    opacity: 0;
+    transition: 2s ease;
+}
+
+.between p,
+.between1 p {
+    max-height: 100px; /* Adjust the value as needed */
+    opacity: 1;
+    transition:0.3s ease;
+}
+
+.aside-hidden .dash p,
+.aside-hidden .between p,
+.aside-hidden .between1 p {
+    display: none;
+}
+.aside-hidden .toggle img:last-child {
+    transform: rotate(180deg);
+}
