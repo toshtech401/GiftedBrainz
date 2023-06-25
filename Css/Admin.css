@@ -106,7 +106,7 @@ aside{
     gap: 30px;
     width: 20%;
     border-right: 0.2px solid black;
-    transition: ease 2s;
+    /* transition: ease 2s; */
     /* padding: 5px 10px; */
 }
 .aside-hidden .between p,

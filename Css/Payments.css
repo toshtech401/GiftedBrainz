@@ -1,0 +1,30 @@
+.pay{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 50px 25px;
+}
+.pays{
+    background-color: #5852FE;
+    font-size: larger;
+    border-radius: 10px;
+    padding: 15px 60px;
+    color: white;
+    border: none;
+}
+.bank{
+    background-color: #D9D9D9;
+    font-size: larger;
+    border-radius: 10px;
+    padding: 15px 50px;
+    border: none;
+    /* color: white; */
+}
+.btt{
+    display: flex;
+    gap: 30px;
+}
+.pay p{
+    color: #D9D9D9;
+    font-size: larger;
+}
