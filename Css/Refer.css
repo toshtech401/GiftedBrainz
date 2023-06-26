@@ -1,0 +1,48 @@
+.refer{
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 40px 20px;
+}
+.refers{
+    display: flex;
+    justify-content: space-between;
+    /* margin-right: 50px; */
+}
+.name{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.total{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.score{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.refers p{
+    font-size: larger;
+}
+.name p, .total p, .score p{
+    border-bottom: 1px solid black;
+    font-weight: 600;
+}
+.name h4, .total h4, .score h4{
+    border-bottom: 1px solid black;
+}
+.name{
+    width: 100%;
+}
+.score{
+    width: 30%;
+}.total{
+    width: 100%;
+}
+.no{
+    border: none;
+}

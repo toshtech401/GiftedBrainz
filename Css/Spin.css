@@ -1,0 +1,34 @@
+.spin{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 30px 20px;
+    width: 95%;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+}
+.bood{
+    background-color: #D9D9D9;
+    height: 40vh;
+    width: 50%;
+}
+.more{
+    background-color: transparent;
+    padding: 15px 80px;
+    border-radius: 20px;
+    /* width: 90%; */
+}
+.now{
+    background-color: #5852FE;
+    padding: 15px 50px;
+    border-radius: 20px;
+    border: none;
+    color: white;
+    /* width: 70%; */
+}
+.uuu{
+    display: flex;
+    gap: 30px;
+    padding-top: 40px;
+}
