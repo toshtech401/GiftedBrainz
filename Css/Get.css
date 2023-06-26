@@ -1,0 +1,36 @@
+.message{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 30px 20px;
+    width: 95%;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+label{
+    display: block;
+}
+input{
+    width: 40%;
+    background-color: #D9D9D9;
+    border: none;
+    outline: none;
+    padding: 15px 5px;
+}
+textarea{
+    width: 40%;
+    background-color: #D9D9D9;
+    border: none;
+    outline: none;
+}
+form button{
+    font-size: larger;
+    border-radius: 10px;
+    padding: 10px 55px;
+    border: none;
+    background-color: #5852FE;
+    color: white;
+}
