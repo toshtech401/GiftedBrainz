@@ -1,0 +1,47 @@
+label{
+    display: block;
+    font-size: larger;
+}
+.settings{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 30px 20px;
+    width: 95%;
+}
+.settings p{
+    color: #000000;
+    font-size: larger;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+form input{
+    width: 40%;
+    background-color: #D9D9D9;
+    border: none;
+    outline: none;
+}
+.pics{
+    height: 35%;
+    width: 20%;
+    border-radius: 80%;
+    background-color: #D9D9D9;
+}
+a{
+    text-decoration: none;
+}
+.nun{
+    display: flex;
+    gap: 220px;
+}
+.settings button{
+    padding: 10px 30px;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    font-size: larger;
+    background-color: #5852FE;
+}
