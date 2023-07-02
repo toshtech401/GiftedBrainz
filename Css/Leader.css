@@ -1,0 +1,47 @@
+
+.leader{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 40px 20px;
+    width: 95%;
+}
+.lead{
+    display: flex;
+    justify-content: space-between;
+}
+.name{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+}
+.total{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+}
+.score{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 30%;
+}
+.name p, .score p, .total p{
+    border-bottom: 1px solid black;
+}
+.name h4, .score h4, .total h4{
+    border-bottom: 1px solid black;
+}
+.nn{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+@media screen and (max-width:950px) {
+    .leader{
+        gap: 120px;
+    }
+}

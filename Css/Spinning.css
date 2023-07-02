@@ -1,0 +1,43 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 40px;
+}
+main img{
+    height: 40vh;
+}
+.img{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+}
+.img button{
+    background-color: rgb(20, 20, 160);
+    padding: 10px ;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: larger;
+}
+@keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .spin-animation {
+    animation: spin 2s linear infinite;
+  }
+  

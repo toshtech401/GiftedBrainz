@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Get Support</title>
     <link rel="stylesheet" href="../Css/Admin.css">
     <link rel="stylesheet" href="../Css/Get.css">
 
@@ -21,53 +21,56 @@
                 <p>Dashboard</p>
             </div>
             <div class="between">
-                <div class="ween">
+                <div class="ween folded">
                     <img src="../Emages/Group 31.png" alt="">
-                    <p class="folded">Quiz Competition</p>
+                    <p class="folded"><a href="./QuizSelector.html">Quiz Competition</a></p>
                 </div>
-                <div class="ween">
+                <div class="ween folded">
                     <img src="../Emages/Group 33.png" alt="">
-                    <p class="folded">Quiz Leaderboard</p>
+                    <p class="folded"><a href="./Leader.html">Quiz Leaderboard</a></p>
                 </div>
-                <div class="ween">
+                <div class="ween folded">
                     <img src="../Emages/RGB Color Wheel.png" alt="">
-                    <p class="folded">Spin To Win</p>
+                    <p class="folded"><a href="./Spin.html">Spin To Win</a></p>
                 </div>
-                <div class="ween">
+                <div class="ween folded">
                     <img src="../Emages/Graduation Cap.png" alt="">
-                    <p class="folded">Courses</p>
+                    <p class="folded"><a href="./CoursePage.html">Courses</a></p>
                 </div>
-                <div class="ween">
+                <div class="ween folded">
                     <img src="../Emages/Bank Cards.png" alt="">
-                    <p class="folded">Payments</p>
+                    <p class="folded"><a href="./Payments.html">Payments</a></p>
                 </div>
-                <div class="ween">
+                <div class="ween folded">
                     <img src="../Emages/Collaboration Female Male.png" alt="">
-                    <p class="folded">Referral History</p>
+                    <p class="folded"><a href="./Referral.html">Referral History</a></p>
                 </div>
-                <div class="ween">
+                <div class="ween folded">
                     <img src="../Emages/Order History.png" alt="">
-                    <p class="folded">Earnings History</p>
+                    <p class="folded"><a href="./">Earnings History</a></p>
                 </div>
             </div>
             <div class="between1">
-                <div class="ween">
+                <div class="ween folded">
                     <img src="../images/Group 34.png" alt="">
-                    <p class="folded">Setting</p>
+                    <p class="folded"><a href="./Settings.html">Setting</a></p>
                 </div>
-                <div class="ween">
+                <div class="ween folded">
                     <img src="../Emages/Group 35.png" alt="">
-                    <p class="folded">Get Help</p>
+                    <p class="folded"><a href="./Get.html">Get Help</a></p>
                 </div>
-                <div class="ween">
+                <div class="ween folded">
                     <img src="../Emages/Group 36.png" alt="">
-                    <p class="folded">Log Out</p>
+                    <p class="folded"><a href="./SignIn.html">Log Out</a></p>
                 </div>
             </div>
         </aside>
         <div class="message">
-            <div>
-                <h1>Get Supports</h1>
+            <div class="nn">
+                <div class="inp">
+                    <h1>Get Supports</h1>
+                    <button>=</button>
+                </div>
                 <p>Contact Us With Your Message. Our Team Will Get Back To You Soon.</p>
             </div>
             <form action="">
@@ -100,8 +103,12 @@
         toggleButton.addEventListener("click", function() {
         toggleLogo.classList.toggle("hidden");
         aside.classList.toggle("aside-hidden");
-        betweenElements.forEach(element => element.classList.toggle("folded"));
-        between1Elements.forEach(element => element.classList.toggle("folded"));
+        });
+        const inpButton = document.querySelector('.inp button');
+          const aside1 = document.querySelector('aside');
+
+            inpButton.addEventListener('click', () => {
+            aside1.classList.toggle('active');
         });
     </script>
 </body>

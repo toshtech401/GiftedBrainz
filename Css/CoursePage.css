@@ -168,3 +168,28 @@ a{
     flex-direction: column;
     gap: 10px;
 }
+.inp{
+    display: flex;
+    justify-content: space-between;
+}
+.button{
+    display: flex;
+    gap: 20px;
+}
+@media screen and (max-width:950px) {
+    .first{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .second{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .crytpo img{
+        height: 20vh;
+    }
+    .button{
+        gap: 10px;
+    }
+
+}

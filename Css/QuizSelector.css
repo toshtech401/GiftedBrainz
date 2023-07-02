@@ -146,3 +146,12 @@ a{
     color: white;
     border-radius: 10px;
 }
+
+@media screen and (max-width:950px) {
+    .other{
+        gap: 120px;
+    }
+    .text{
+        width: 100%;
+    }
+}

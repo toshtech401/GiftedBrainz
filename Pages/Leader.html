@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Leaderboard</title>
     <link rel="stylesheet" href="../Css/Admin.css">
+    <link rel="stylesheet" href="../Css/Leader.css">
 
 </head>
 <body>
@@ -20,50 +21,109 @@
                 <p>Dashboard</p>
             </div>
             <div class="between">
-                <div class="ween">
+                <div class="ween folded">
                     <img src="../Emages/Group 31.png" alt="">
-                    <p class="folded">Quiz Competition</p>
+                    <p class="folded"><a href="./QuizSelector.html">Quiz Competition</a></p>
                 </div>
-                <div class="ween">
+                <div class="ween folded">
                     <img src="../Emages/Group 33.png" alt="">
-                    <p class="folded">Quiz Leaderboard</p>
+                    <p class="folded"><a href="./Leader.html">Quiz Leaderboard</a></p>
                 </div>
-                <div class="ween">
+                <div class="ween folded">
                     <img src="../Emages/RGB Color Wheel.png" alt="">
-                    <p class="folded">Spin To Win</p>
+                    <p class="folded"><a href="./Spin.html">Spin To Win</a></p>
                 </div>
-                <div class="ween">
+                <div class="ween folded">
                     <img src="../Emages/Graduation Cap.png" alt="">
-                    <p class="folded">Courses</p>
+                    <p class="folded"><a href="./CoursePage.html">Courses</a></p>
                 </div>
-                <div class="ween">
+                <div class="ween folded">
                     <img src="../Emages/Bank Cards.png" alt="">
-                    <p class="folded">Payments</p>
+                    <p class="folded"><a href="./Payments.html">Payments</a></p>
                 </div>
-                <div class="ween">
+                <div class="ween folded">
                     <img src="../Emages/Collaboration Female Male.png" alt="">
-                    <p class="folded">Referral History</p>
+                    <p class="folded"><a href="./Referral.html">Referral History</a></p>
                 </div>
-                <div class="ween">
+                <div class="ween folded">
                     <img src="../Emages/Order History.png" alt="">
-                    <p class="folded">Earnings History</p>
+                    <p class="folded"><a href="./">Earnings History</a></p>
                 </div>
             </div>
             <div class="between1">
-                <div class="ween">
+                <div class="ween folded">
                     <img src="../images/Group 34.png" alt="">
-                    <p class="folded">Setting</p>
+                    <p class="folded"><a href="./Settings.html">Setting</a></p>
                 </div>
-                <div class="ween">
+                <div class="ween folded">
                     <img src="../Emages/Group 35.png" alt="">
-                    <p class="folded">Get Help</p>
+                    <p class="folded"><a href="./Get.html">Get Help</a></p>
                 </div>
-                <div class="ween">
+                <div class="ween folded">
                     <img src="../Emages/Group 36.png" alt="">
-                    <p class="folded">Log Out</p>
+                    <p class="folded"><a href="./SignIn.html">Log Out</a></p>
                 </div>
             </div>
         </aside>
+        <div class="leader">
+            <div class="nn">
+                <div class="inp">
+                    <h1>Leaderboard</h1>
+                    <button>=</button>
+                </div>
+                <p>View The Leaderboard History</p>
+            </div>
+            <div class="lead">
+                <div class="name">
+                    <h4>NAME</h4>
+                    <p>1. Samuel David</p>
+                    <p>2. Adebayo Adeniyi</p>
+                    <p>3. Chioma Chibuzor</p>
+                    <p>4. Bello Dammy</p>
+                    <p>5. Amari Chima</p>
+                    <p>6. Diallo Aadan</p>
+                    <p>7. Amari Chima</p>
+                    <p>8. Diallo Aadan</p>
+                    <p>9. Amari Chima</p>
+                    <p>10. Diallo Aadan</p>
+                    <p>11. Amari Chima</p>
+                    <p>12. Diallo Aadan</p>
+            
+                </div>
+                <div class="total">
+                    <h4>TOTAL ANSWERED</h4>
+                
+                    <p>340</p>
+                    <p>340</p>
+                    <p>340</p>
+                    <p>340</p>
+                    <p>340</p>
+                    <p>340</p>
+                    <p>340</p>
+                    <p>340</p>
+                    <p>340</p>
+                    <p>340</p>
+                    <p>340</p>
+                    <p>340</p>
+                </div>
+                <div class="score">
+                    <h4>REWARD</h4>
+                    <p>#235</p>
+                    <p>#235</p>
+                    <p>#235</p>
+                    <p>#235</p>
+                    <p>#235</p>
+                    <p>#235</p>
+                    <p>#235</p>
+                    <p>#235</p>
+                    <p>#235</p>
+                    <p>#235</p>
+                    <p>#235</p>
+                    <p>#235</p>
+        
+                </div>
+            </div>
+        </div>
     </main>
 
     <script>
@@ -78,6 +138,12 @@
         aside.classList.toggle("aside-hidden");
         betweenElements.forEach(element => element.classList.toggle("folded"));
         between1Elements.forEach(element => element.classList.toggle("folded"));
+        });
+        const inpButton = document.querySelector('.inp button');
+          const aside1 = document.querySelector('aside');
+
+            inpButton.addEventListener('click', () => {
+            aside1.classList.toggle('active');
         });
     </script>
 </body>

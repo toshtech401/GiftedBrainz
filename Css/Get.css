@@ -34,3 +34,30 @@ form button{
     background-color: #5852FE;
     color: white;
 }
+.nn{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.leader{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+@media screen and (max-width:950px) {
+    form{
+        width: 100%;
+    }
+    input{
+        width: 100%;
+    }
+    textarea{
+        width: 100%;
+        height: 30vh;
+    }
+    .message{
+        gap: 120px;
+        padding: 40px 20px;
+    }
+    
+}

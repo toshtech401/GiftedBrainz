@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../Css/Spinning.css">
+</head>
+<body>
+    <main>
+        <div>
+            <h1>spin the wheel</h1>
+            <p>win and be rewarded</p>
+        </div>
+        <div class="img">
+            <img id="spinImage" src="../Emages/Group 46.png" alt="">
+            <button onclick="spinImage()">Spin Now</button>
+        </div>
+    </main>
+
+    <script>
+        function spinImage() {
+        var image = document.getElementById('spinImage');
+        image.classList.add('spin-animation');
+        setTimeout(function() {
+      image.classList.remove('spin-animation');
+    }, 2000); // Remove the class after 2 seconds (adjust the duration as needed)
+  }
+</script>
+
+
+
+
+
+
+
+</body>
+</html>
