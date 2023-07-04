@@ -7,6 +7,7 @@
     <title>Course</title>
     <link rel="stylesheet" href="../Css/CoursePage.css">
     <link rel="stylesheet" href="../Css/Admin.css">
+    <link rel="stylesheet" href="../Css/Settings.css">
 </head>
 <body>
     <main>
@@ -66,9 +67,9 @@
         </aside>
         <div class="other">
             <div class="head">
-                <div class="inp">
+                <div class="bbt">
                     <h2>Explore Your Prefered Course</h2>
-                    <button>=</button>
+                    <button class="btc">=</button>
                 </div>
                 <div class="select">
                     <div>
@@ -208,7 +209,7 @@
         betweenElements.forEach(element => element.classList.toggle("folded"));
         between1Elements.forEach(element => element.classList.toggle("folded"));
         });
-        const inpButton = document.querySelector('.inp button');
+        const inpButton = document.querySelector('.bbt button');
           const aside1 = document.querySelector('aside');
 
             inpButton.addEventListener('click', () => {

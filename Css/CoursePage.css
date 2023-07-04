@@ -185,11 +185,21 @@ a{
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
+    .crytpo{
+        align-items: center;
+    }
     .crytpo img{
         height: 20vh;
     }
     .button{
         gap: 10px;
+        flex-direction: column;
+        width: 100%;
+    }
+    .body2 img,
+    .body img{
+        height: 10vh;
+        width: 100%;
     }
 
 }
