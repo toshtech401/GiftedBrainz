@@ -7,6 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="../Css/Admin.css">
     <link rel="stylesheet" href="../Css/Refer.css">
+    <link rel="stylesheet" href="../Css/Settings.cssJ">
 
 </head>
 <body>
@@ -67,7 +68,10 @@
         </aside>
         <div class="refer">
             <div>
-                <h2>Referrals History</h2>
+                <div class="bbt">
+                    <h2>Referrals History</h2>
+                    <button>=</button>
+                </div>
                 <p>Manage Your Friends Transactions With Ease.</p>
             </div>
             <div class="refers">
@@ -115,6 +119,12 @@
         aside.classList.toggle("aside-hidden");
         betweenElements.forEach(element => element.classList.toggle("folded"));
         between1Elements.forEach(element => element.classList.toggle("folded"));
+        });
+        const inpButton = document.querySelector('.bbt button');
+          const aside1 = document.querySelector('aside');
+
+            inpButton.addEventListener('click', () => {
+            aside1.classList.toggle('active');
         });
     </script>
 </body>

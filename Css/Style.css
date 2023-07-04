@@ -3,6 +3,11 @@
     margin: 0;
     box-sizing: border-box;
 }
+body{
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
 nav{
     display: flex;
     align-items: center;
@@ -11,8 +16,19 @@ nav{
 nav img{
     height: 20vh;
 }
+nav ol a{
+  color: black;
+  text-decoration: none;
+  font-size: 20px;
+}
+.toggle button{
+  display: none;
+}
+
+
 ol{
     display: flex;
+    align-items: center;
     gap: 30px;
 }
 header{
@@ -31,14 +47,9 @@ ol li{
     align-items: center;
     gap: 30px;
 }
-.btn-23,
-.btn-23 *,
-.btn-23 :after,
-.btn-23 :before,
-.btn-23:after,
-.btn-23:before {
-  border: 0 solid;
-  box-sizing: border-box;
+.log{
+  display: flex;
+  align-items: center;
 }
 .btn-23 {
   -webkit-tap-highlight-color: transparent;
@@ -46,76 +57,19 @@ ol li{
   background-image: none;
   color: #fff;
   cursor: pointer;
-  font-size: 100%;
   font-weight: 900;
   line-height: 1.5;
   margin: 0;
-  padding: 0;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 20px;
   text-transform: uppercase;
 }
-.btn-23:disabled {
-  cursor: default;
-}
-.btn-23:-moz-focusring {
-  outline: auto;
-}
-.btn-23 svg {
-  display: block;
-}
-.btn-23 [hidden] {
+.mobile-nav{
   display: none;
+  transition: ease-in-out 3s;
 }
-.btn-23 {
-  border-radius: 99rem;
-  border-width: 2px;
-  overflow: hidden;
-  padding: 0.8rem 3rem;
-  position: relative;
-}
-.btn-23 span {
-  display: grid;
-  inset: 0;
-  place-items: center;
-  position: absolute;
-  transition: opacity 0.2s ease;
-}
-.btn-23 .marquee {
-  --spacing: 5em;
-  --start: 0em;
-  --end: 5em;
-  -webkit-animation: marquee 1s linear infinite;
-  animation: marquee 1s linear infinite;
-  -webkit-animation-play-state: paused;
-  animation-play-state: paused;
-  opacity: 0;
-  position: relative;
-  text-shadow: #fff var(--spacing) 0, #fff calc(var(--spacing) * -1) 0,
-    #fff calc(var(--spacing) * -2) 0;
-}
-.btn-23:hover .marquee {
-  -webkit-animation-play-state: running;
-  animation-play-state: running;
-  opacity: 1;
-}
-.btn-23:hover .text {
-  opacity: 0;
-}
-@-webkit-keyframes marquee {
-  0% {
-    transform: translateX(var(--start));
-  }
-  to {
-    transform: translateX(var(--end));
-  }
-}
-@keyframes marquee {
-  0% {
-    transform: translateX(var(--start));
-  }
-  to {
-    transform: translateX(var(--end));
-  }
-}
+
 
 .dash img{
     height: 65vh;
@@ -491,7 +445,8 @@ main{
   .hh{
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 10px
+  ;
   }
   .hh p{
     font-size: 15px;
@@ -500,28 +455,95 @@ main{
     text-decoration: none;
     color: #fff;
   }
+  nav {
+    padding: 10px;
+  }
+  
+
+  
+  .bon {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .bon ol {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .bon ol li {
+    margin-right: 15px;
+  }
+  
+  .bon ol li a {
+    text-decoration: none;
+  }
+  .mobile-nav{
+    display: none;
+  }
+  
+  
 
 
   @media screen and (max-width:950px) {
     main{
       flex-direction: column-reverse;
+      align-items: center;
+      width: 100%;
+    }
+    .earn{
+      align-items: center;
+      padding: 10px 15px;
+    }
+    .earn h2{
+      width: 100%;
+    }
+    .sec-1{
+      padding: 20px;
     }
     .sec-1 p{
       width: 100%;
     }
+    nav ol{
+      display: none;
+    }
     .male{
       flex-direction: column;
+      align-items: center;
+      margin-left: 50px;
+      /* width: 100%; */
+    }
+    .sec-2{
+      align-items: center;
+      width: 100%;
+      padding: 30px 5px;
+      justify-content: center;
+    }
+    body{
+      width: 100%;
+    }
+    .texx input{
+      width: 100%;
+    }
+    .texx button{
+      width: 100%;
     }
     .female{
       flex-direction: column;
+      align-items: center;
+      margin-left: 50px;
     }
     .sec-3{
       flex-direction: column;
+      width: 100%;
+      padding: 30px 40px;
     }
     .accord{
       flex-direction: column;
       padding: 0%;
-      /* width: 100%; */
     }
     .accordion-header{
       width: 100%;
@@ -531,6 +553,7 @@ main{
     }
     .sec-4{
       padding: 10px 30px;
+      gap: 30px;
     }
     .accordion-item{
       width: 100%;
@@ -553,8 +576,71 @@ main{
       flex-direction: column-reverse;
     }
     .dash img{
-      height: 30vh;
+      height: 40vh;
     }
+    .breed button{
+      width: 70%;
+      padding: 10px 10px;
+    }
+    .bon{
+      display: none;
+    }
+    .mobile-nav{
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      overflow:hidden ;
+      transition: 3s ease-in-out;
+  }
+  .display{
+    display: block;
+    /* height: 70vh; */
+    background-color: blue;
+    position: absolute;
+    flex-direction: column;
+    justify-content: center;
+    top:20vh;
+    right: 0px;
+    padding: 20px 10px;
+    width: 70%;
+    transition: 3s ease-in-out;
+  }
+  .toggle button{
+    display: block;
+  }
+  .yeu p{
+    width: 70%;
+  }
+  .own{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .mobile-nav ol{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    gap: 60px;
+  }
+  .mobile-nav ol li a{
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+  }
+  .toggle button{
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    background-color: blue;
+    color: white;
+    font-size: larger;
+  }
+  header{
+    justify-content: space-between;
+  }
   }
   
 

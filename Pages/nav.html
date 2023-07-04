@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../Css/nav.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">Logo</div>
+        <ul class="nav-links">
+          <li><a href="#">Cource</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="burger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+      </nav>
+
+
+      <script>
+        const burger = document.querySelector(".burger");
+const nav = document.querySelector(".nav-links");
+const navLinks = document.querySelectorAll(".nav-links li");
+
+burger.addEventListener("click", () => {
+  nav.classList.toggle("nav-active");
+
+  navLinks.forEach((link, index) => {
+    if (link.style.animation) {
+      link.style.animation = "";
+    } else {
+      link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.3}s`;
+    }
+  });
+
+  burger.classList.toggle("toggle");
+});
+
+      </script>
+</body>
+</html>

@@ -11,23 +11,29 @@
 <body>
     <header>
         <nav>
-            <div>
+            <div class="logo">
                 <img src="./images/logo.png" alt="">
             </div>
-            <div class="bon">
+            <div class="log">
                 <ol>
                     <li><a href="./Pages/CoursePage.html">Courses</a></li>
                     <li><a href="./Pages/Community.html">About</a></li>
                     <li><a href="./Pages/Get.html">Contact</a></li>
+                    <button class="btn-23">Sign In</button>
                 </ol>
-                <button class="btn-23">
-                    <span class="text"><a href="./Pages/SignIn.html">Sign In</a>
-                    </span>
-                    <span class="marquee" aria-hidden><a href="">Sign In</a></span>
-                </button>
-                  
+                <div class="toggle">
+                    <button>=</button>
+                </div>
             </div>
         </nav>
+        <div class="mobile-nav">
+            <ol>
+                <li><a href="./Pages/CoursePage.html">Courses</a></li>
+                <li><a href="./Pages/Community.html">About</a></li>
+                <li><a href="./Pages/Get.html">Contact</a></li>
+                <button>Sign In</button>
+            </ol>
+        </div>
     </header>
     <main>
         <div class="breed">
@@ -376,6 +382,9 @@
         });
 
 
+        document.querySelector('.toggle').addEventListener('click', ()=>{
+            document.querySelector('.mobile-nav').classList.toggle("display")
+        })
     </script>
 </body>
 </html>

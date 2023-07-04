@@ -206,6 +206,14 @@ span{
 
 
 @media screen and (max-width:950px) {
+    .left{
+        width: 100%;
+        padding: 10px 15px;
+    }
+    .inp{
+        display: grid;
+        grid-template-columns: 0.5fr 0.5fr;
+    }
     .inp button{
         display: block;
     }
@@ -237,10 +245,10 @@ aside.active {
   display: block;
 }
 
-.inp button {
-  padding: 10px 20px;
+.bb {
+  padding: 10px 10px;
     border-radius: 10px;
-    color: #5852FE;
+   background-color: #5852FE;
     border: none;
   cursor: pointer;
   z-index: 9;
@@ -262,14 +270,6 @@ aside.active {
   transform: translateX(0);
   transition: ease-in-out .5s;
 }
-
-.inp button {
-  background-color: #ccc;
-  color: #fff;
-  padding: 10px;
-  border: none;
-  cursor: pointer;
-}
 #toggleButton{
     display: none;
 }
@@ -290,6 +290,9 @@ aside.active {
 }
 .active{
     gap: 40px;
+}
+.inp  input{
+    width: 100%;
 }
 
 }

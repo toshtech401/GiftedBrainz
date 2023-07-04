@@ -67,7 +67,10 @@
         </aside>
         <div class="settings">
             <div>
-                <h1>Settings</h1>
+                <div class="bbt">
+                    <h1>Settings</h1>
+                    <button>=</button>
+                </div>
                 <p>Manage All Your Settings In Here.</p>
             </div>
             <div class="pics"></div>
@@ -102,6 +105,13 @@
         aside.classList.toggle("aside-hidden");
         betweenElements.forEach(element => element.classList.toggle("folded"));
         between1Elements.forEach(element => element.classList.toggle("folded"));
+        });
+
+        const inpButton = document.querySelector('.bbt button');
+          const aside1 = document.querySelector('aside');
+
+            inpButton.addEventListener('click', () => {
+            aside1.classList.toggle('active');
         });
     </script>
 </body>
